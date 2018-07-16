@@ -1,21 +1,35 @@
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%
 }
 
 body {
   text-align: center;
-  background: url("http://dash.ga.co/assets/anna-bg.png");
+  background-image: url("https://www.solidbackgrounds.com/images/website/950x534/950x534-yellow-rose-petals-free-website-background-image.jpg");
   background-size: cover;
   background-position: center;
   color: white;
   font-family: helvetica;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+    z-index: -1;
+  }
 }
 
 p {
@@ -29,6 +43,6 @@ input {
 }
 
 input[type="submit"] {
-  background: red;
+  background: rgb(126, 126, 114);
   color: white;
 }
