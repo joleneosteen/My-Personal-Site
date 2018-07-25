@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html>
 
 <head>
@@ -10,12 +10,108 @@
 </head>
 
 <body>
-  <img src="src/images/headshotpic.jpg" alt="Me" style="width: 200px;height:200px;" />
-  <p> Jolene Osteen's Page </p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
 
   <script src="dist/bundle.js"></script>
+
 </body>
 
 </html>
+
+<style>
+  header {
+    text-align: center;
+    background: url("https://www.solidbackgrounds.com/images/website/950x534/950x534-yellow-rose-petals-free-website-background-image.jpg");
+    background-size: cover;
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  img {
+    margin: 40px 0px 0px 0px;
+    border: 7px solid white;
+    border-radius: 20px;
+  }
+
+  ul {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  li {
+    display: inline;
+    padding: 0px 10px 0px 10px;
+  }
+
+  article {
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 36px;
+    }
+    li {
+      display: block;
+      padding: 5px;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <image src="src/images/headshotpic.jpg" { alt="My headshot" style="width:200px;height:200px;">
+
+
+      <h1>Jolene's Blog</h1>
+      <ul>
+        <li>
+          <a href="#">Contact Information</a>
+        </li>
+        <li>
+          <a href="#">In the Life of a Christian Teen</a>
+        </li>
+        <li>
+          <a href="#">Resources</a>
+        </li>
+      </ul>
+  </header>
+
+  <article>
+    <h2>Introducing Me</h2>
+    <p>Hello! My name is Joysan Jolene Osteen, and I am a resident of Brevard, North Carolina. I am apart of a family of eight
+      with Micronesian American ancestry. I currently attend Brevard High School and will graduate in 2020. I plan on attending
+      college in-state, hopefully at either UNC Chapel Hill or UNC Greensboro.
+      <p text-align=right; </p>
+        <button>Like</button>
+  </article>
+
+  <article>
+    <h2>My Mission as a Christian Teen</h2>
+    <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson
+      gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk
+      bitters. Four loko leggings chambray Vice.</p>
+    <button>Like</button>
+  </article>
+
+  <article>
+    <h2>Forage food truck keytar master cleanse</h2>
+    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights
+      organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function () {
+      alert("clicked!")
+    });
+  </script>
+</body>
